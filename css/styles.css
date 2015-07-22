@@ -1,0 +1,26 @@
+.jumbo
+{
+    background-color:transparent;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/jumbo5.jpg);
+}
+.brandIcon
+{
+    margin: 0;
+    padding:0;
+}
+.brandIcon img
+{
+    display: inline-block;
+    max-height: 100px;
+}
+#jumbo
+{
+	padding-top: 20px;
+}
+#jumbo p
+{
+	margin-bottom:4px;
+}
+
