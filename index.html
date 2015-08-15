@@ -7,7 +7,7 @@
 	<link href="css/animate.css" rel="stylesheet">
 	
 </head>
-<body>
+<body ng-app="whatsdplan">
 	<div class = "navbar navbar-default">
 	    <div class="container">
 	        <div class="navbar-header">
@@ -99,29 +99,135 @@ void createGitHubProfilePage()
         </div>
     </div>
 
-
-<div id="rating" ng-app="myApp"  class="container" ng-init="languageRatings=[
-{language:'C',rating:9},
+<div id="rating" class="container">
+    <div class="row">
+        <div class="col-sm-6" ng-init="appRatings=[
 {language:'C++',rating:'9'},
 {language:'Java',rating:'8'},
+{language:'C',rating:9},
 {language:'Python',rating:'8'},
-{language:'HTML',rating:'10'},
-{language:'CSS',rating:'9'},
-{language:'JavaScript',rating:'8'},
 {language:'Perl',rating:'6'},
 {language:'Erlang',rating:'5'}]">
-  <h3>Languages</h3>
-  <div ng-repeat="x  in languageRatings">
+  <h3 style="margin-bottom: 40px;">Application Development</h3>
+  <div ng-repeat="x  in appRatings">
         <div class="row">
-            <div class="col-sm-2 language">
+            <div class="col-sm-4 language">
                     {{x.language}} 
             </div>
-            <div class="col-sm-4 rating">
-                    <span  ng-repeat="n in [] | range:x.rating"> &#9733</span>
+            <div class="col-sm-8 rating">
+                    <span  ng-repeat="n in [] | range:x.rating"> &#9733 </span>
                    <span  ng-repeat="n in [] | range:10-x.rating"> &#9734</span>
             </div>
         </div>
+    </div>
+
+  <h3 style="margin-bottom: 40px;">Android Development</h3>
+<div ng-init="androidRatings=[
+{language:'Development',rating:'9'},
+{language:'WireFraming',rating:'8'},
+{language:'Material Design',rating:'9'}]">
+  <div ng-repeat="x  in androidRatings">
+        <div class="row">
+            <div class="col-sm-4 language">
+                    {{x.language}} 
+            </div>
+            <div class="col-sm-8 rating">
+                    <span  ng-repeat="n in [] | range:x.rating"> &#9733 </span>
+                   <span  ng-repeat="n in [] | range:10-x.rating"> &#9734</span>
+            </div>
   </div>
+  </div>
+</div>
+
+  <h3 style="margin-bottom: 40px;">Tools and Version Controlling</h3>
+<div ng-init="toolRatings=[
+{language:'Perforce',rating:'10'},
+{language:'Git',rating:'10'},
+{language:'BitBucket',rating:'10'},
+{language:'Jenkins',rating:'7'},
+{language:'Visual Studio',rating:'8'},
+{language:'Vim',rating:'7'},
+{language:'Android Studio',rating:'9'}]">
+  <div ng-repeat="x  in toolRatings">
+        <div class="row">
+            <div class="col-sm-4 language">
+                    {{x.language}} 
+            </div>
+            <div class="col-sm-8 rating">
+                    <span  ng-repeat="n in [] | range:x.rating"> &#9733 </span>
+                   <span  ng-repeat="n in [] | range:10-x.rating"> &#9734</span>
+            </div>
+  </div>
+  </div>
+</div>
+
+
+
+</div>
+
+<div class="col-sm-6" ng-init="webRatings=[
+{language:'HTML',rating:'10'},
+{language:'CSS',rating:'9'},
+{language:'JavaScript',rating:'8'},
+{language:'Bootstrap',rating:'9'},
+{language:'Jquery',rating:'7'},
+{language:'AngularJs',rating:'8'},
+{language:'Flask Python',rating:'9'},
+{language:'Django Python',rating:'7'},
+{language:'Code Ignitor(PHP)',rating:'7'}]"> 
+
+  <h3 style="margin-bottom: 40px;">Web Development</h3>
+  <div ng-repeat="x  in webRatings">
+        <div class="row">
+            <div class="col-sm-4 language">
+                    {{x.language}} 
+            </div>
+            <div class="col-sm-8 rating">
+                    <span  ng-repeat="n in [] | range:x.rating"> &#9733 </span>
+                   <span  ng-repeat="n in [] | range:10-x.rating"> &#9734</span>
+            </div>
+  </div>
+ 
+</div>
+
+  <h3 style="margin-top: 20px; margin-bottom: 20px">Databases</h3>
+ <div ng-init="databaseRatings=[
+{language:'MySql',rating:'9'},
+{language:'Oracle',rating:'9'},
+{language:'MongoDb',rating:'8'}]">
+<div ng-repeat="x  in databaseRatings">
+        <div class="row">
+            <div class="col-sm-4 language">
+                    {{x.language}} 
+            </div>
+            <div class="col-sm-8 rating">
+                    <span  ng-repeat="n in [] | range:x.rating"> &#9733 </span>
+                   <span  ng-repeat="n in [] | range:10-x.rating"> &#9734</span>
+            </div>
+  </div>
+</div>
+
+  <h3 style="margin-top: 20px; margin-bottom: 20px">Deployment and OS</h3>
+ <div ng-init="deploymentRatings=[
+{language:'Ubuntu',rating:'9'},
+{language:'Windows',rating:'9'},
+{language:'Mac',rating:'7'},
+{language:'Amazon Web Services',rating:'8'},
+{language:'Google Cloud Engine',rating:'6'},
+{language:'Heroku',rating:'6'}]">
+
+<div ng-repeat="x  in deploymentRatings">
+        <div class="row">
+            <div class="col-sm-4 language">
+                    {{x.language}} 
+            </div>
+            <div class="col-sm-8 rating">
+                    <span  ng-repeat="n in [] | range:x.rating"> &#9733 </span>
+                   <span  ng-repeat="n in [] | range:10-x.rating"> &#9734</span>
+            </div>
+  </div>
+</div>
+    </div>
 
 </div>
 
@@ -144,7 +250,7 @@ void createGitHubProfilePage()
 
 	<script>
 		new WOW().init();
-        var myApp = angular.module('myApp', []);
+        var myApp = angular.module('whatsdplan', []);
         myApp.filter('range', function() {
           return function(input, total) {
             total = parseInt(total);
