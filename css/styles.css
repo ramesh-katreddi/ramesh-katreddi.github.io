@@ -28,3 +28,27 @@
 {
 	color:blue;
 }
+
+#rating
+{
+    margin-top: 50px;
+    min-height: 400px;
+}
+
+
+#rating .language
+{
+    color:rgb(100, 48, 48); 
+    font-size:16px;
+}
+#rating .rating
+{
+    color:rgb(216, 130, 99); 
+    font-size:20px;
+}
+
+
+a[id= "rating"]:target ~ #rating {
+    -webkit-transform: translateY( -1000px );
+    transform: translateY( -1000px );
+}
