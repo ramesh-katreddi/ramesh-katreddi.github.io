@@ -47,7 +47,6 @@
 		            		<pre>abstract Class CodeHuman 
 {
     abstract Favourite Eat();
-    abstract Favourite Drink ();
     abstract Peace Sleep ();
     abstract <del style="color:red">PaySlip</del> <ins>Fun</ins> Job (); 
     <b>abstract <del style="color:red">Job</del> <ins>Passion</ins> code();</b>
@@ -66,22 +65,22 @@ void createGitHubProfilePage()
       	          <div>
                 	<pre><span class="keyword">Class</span> <b>Ramesh</b> <span class="keyword">extends</span> <b>CodeHuman</b> <span class="keyword">implements</span> <b>Fun</b>
 {
-    <span class="keyword">String</span> name = <b>"Ramesh Kumar Katreddi"</b>;
+    <span class="keyword">String</span> mName = <b>"Ramesh Kumar Katreddi"</b>;
     
-    <span class="keyword">int</span> age = <b>24</b>;
+    <span class="keyword">int</span> mAge = <b>24</b>;
     
-    <span class="keyword">int</span> noOf<b>Coding</b>Years = <b>8</b>;
+    <span class="keyword">int</span> m<b>Coding</b>Years = <b>8</b>;
     
-    <span class="keyword">float</span> noOf<b>IndustryExperience</b> = <b>4.5L</b>;
+    <span class="keyword">float</span> m<b>IndustryExperience</b> = <b>4.5F</b>;
     
-    <span class="keyword">Map</span> whoAmI = {"<b>coder</b>", "<b>entrepreneur</b>"};
+    <span class="keyword">List</span> mWhoAmI = {"<b>coder</b>", "<b>entrepreneur</b>"};
+
+    <span class="keyword">List</span> mWhatIcode = {"<b>Full stack web</b>", "<b>Android</b>", "<b>Anything & everything</b>""};
     
-    <span class="keyword">Location</span> location = new Location(<b>17.3700L, 78.4800L</b>);
+    <span class="keyword">Location</span> mLocation = new Location(<b>17.3700L, 78.4800L</b>);
     
     @Override <span class="keyword">Favourite</span> eat { <span class="keyword">return</span> <span class="keyword">new</span> Favourite("chicken");} 
-    
-    @Override <span class="keyword">Favourite</span> drink { <span class="keyword">return</span> <span class="keyword">new</span> Favourite("water");} 
-    
+        
     @Override <span class="keyword">Peace</span> sleep { <span class="keyword">return</span> <span class="keyword">new</span> Hours(7);} 
     
 <b>    @Override Fun job { return <span style="color:red"><b>this</b></span>;} </b>
@@ -121,11 +120,12 @@ void createGitHubProfilePage()
         </div>
     </div>
 
-  <h3 style="margin-bottom: 40px;">Android Development</h3>
+  <h3 style="margin-bottom: 20px; margin-top: 20px">Android Development</h3>
 <div ng-init="androidRatings=[
 {language:'Development',rating:'9'},
 {language:'WireFraming',rating:'8'},
-{language:'Material Design',rating:'9'}]">
+{language:'Material Design',rating:'9'},
+{language:'WebApps',rating:'5'}]">
   <div ng-repeat="x  in androidRatings">
         <div class="row">
             <div class="col-sm-4 language">
@@ -139,7 +139,7 @@ void createGitHubProfilePage()
   </div>
 </div>
 
-  <h3 style="margin-bottom: 40px;">Tools and Version Controlling</h3>
+  <h3 style="margin-bottom: 20px; margin-top: 20px;">Tools and Version Controlling</h3>
 <div ng-init="toolRatings=[
 {language:'Perforce',rating:'10'},
 {language:'Git',rating:'10'},
@@ -231,7 +231,7 @@ void createGitHubProfilePage()
 
 </div>
 
-    <div class="container">
+    <div id="#contact" class="container">
     	<div class="row"> 
     		<div class="col-sm-4"> </div>
     		<div class="col-sm-4"> </div>
