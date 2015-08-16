@@ -37,7 +37,6 @@ g#jumbo p
     padding-bottom: 40px;
 }
 
-
 #rating .language
 {
     color:rgb(100, 48, 48); 
@@ -48,7 +47,6 @@ g#jumbo p
     color:rgb(216, 130, 99); 
     font-size:20px;
 }
-
 
 a[id= "rating"]:target ~ #rating {
     -webkit-transform: translateY( -1000px );
