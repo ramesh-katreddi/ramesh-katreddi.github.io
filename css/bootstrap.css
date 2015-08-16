@@ -2730,12 +2730,15 @@ select[multiple].form-group-lg .form-control {
   margin-left: -15px;
   margin-right: -15px;
 }
+.form-horizontal .control-label {
+  color: #fff;
+}
 @media (min-width: 768px) {
   .form-horizontal .control-label {
     text-align: right;
     margin-bottom: 0;
     padding-top: 7px;
-  }
+  }}
 }
 .form-horizontal .has-feedback .form-control-feedback {
   right: 15px;

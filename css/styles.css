@@ -1,5 +1,6 @@
 .jumbo
 {
+    padding-top:100px;
     background-color:transparent;
     background-size:cover;
     background-repeat: no-repeat;
@@ -15,11 +16,7 @@
     display: inline-block;
     max-height: 100px;
 }
-#jumbo
-{
-	padding-top: 20px;
-}
-#jumbo p
+g#jumbo p
 {
 	margin-bottom:4px;
 }
@@ -29,9 +26,15 @@
 	color:blue;
 }
 
-#rating
+#rating, #contact
 {
-    padding-top: 40px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+#contact
+{
+    padding-top: 80px;
+    padding-bottom: 40px;
 }
 
 
@@ -50,4 +53,44 @@
 a[id= "rating"]:target ~ #rating {
     -webkit-transform: translateY( -1000px );
     transform: translateY( -1000px );
+}
+
+.social
+{
+    display: inline-block;
+    height: 30px;
+    width:30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fb
+{
+    background-image: url('../images/facebook-icon.png');
+}
+.twitter
+{
+    background-image: url('../images/twitter-icon.png');
+}
+.linkedin
+{
+    background-image: url('../images/linkedin-icon.png');
+}
+.stack
+{
+    background-image: url('../images/stack_exchange.png');
+}
+
+.quora
+{    
+    background-image: url('../images/quora.png');
+}
+
+.spoj
+{
+    background-image: url('../images/spoj.png');    
+}
+
+.github
+{
+    background-image: url('../images/github.png');    
 }
