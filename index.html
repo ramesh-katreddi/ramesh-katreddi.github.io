@@ -22,16 +22,16 @@
 	        </button>
 	        <div class="collapse navbar-collapse navHeaderCollapse">
 	            <ul class="nav navbar-nav navbar-right">
-	 
+
                 <li><a href="#jumbo"><i class="glyphicon glyphicon-user"></i> Me </a></li>
-                <li><a href="#"><i class="glyphicon glyphicon-road"></i> So far in life.. </a></li> 
+                <li><a href="#"><i class="glyphicon glyphicon-road"></i> So far in life.. </a></li>
                 <li><a href="#rating"><i class="glyphicon glyphicon-star"></i> Skills </a></li>
-	            <li><a href="#contact"><i class="glyphicon glyphicon-pencil"></i> Contact</a></li> 
-	            <li><a href="#"><i class="glyphicon glyphicon-globe"></i> Blog </a></li> 
+	            <li><a href="#contact"><i class="glyphicon glyphicon-pencil"></i> Contact</a></li>
+	            <li><a href="#"><i class="glyphicon glyphicon-globe"></i> Blog </a></li>
 	            </ul>
 	        </div>
-	    </div>        
-	</div>    
+	    </div>
+	</div>
     <div id="jumbo" class="jumbo container-fluid">
         <div class="jumbotron text-center">
             <div class="row">
@@ -43,13 +43,13 @@
  </pre>
                   </div>
 		          <div>
-		            		<pre>abstract Class CodeHuman 
+		            		<pre>abstract Class CodeHuman
 {
     abstract Favourite Eat();
     abstract Peace Sleep ();
-    abstract <del style="color:red">PaySlip</del> <ins>Fun</ins> Job (); 
+    abstract <del style="color:red">PaySlip</del> <ins>Fun</ins> Job ();
     <b>abstract <del style="color:red">Job</del> <ins>Passion</ins> code();</b>
-}</pre>                		
+}</pre>
 	              </div>
 	              <div style="background-color:black;padding-top:0px;">
 	            			<pre>
@@ -65,23 +65,23 @@ void createGitHubProfilePage()
                 	<pre><span class="keyword">Class</span> <b>Ramesh</b> <span class="keyword">extends</span> <b>CodeHuman</b> <span class="keyword">implements</span> <b>Fun</b>
 {
     <span class="keyword">String</span> mName = <b>"Ramesh Kumar Katreddi"</b>;
-    
-    <span class="keyword">int</span> mAge = <b>24</b>;
-    
-    <span class="keyword">int</span> m<b>Coding</b>Years = <b>8</b>;
-    
-    <span class="keyword">float</span> m<b>IndustryExperience</b> = <b>4.5F</b>;
-    
+
+    <span class="keyword">int</span> mAge = <b>26</b>;
+
+    <span class="keyword">int</span> m<b>Coding</b>Years = <b>9</b>;
+
+    <span class="keyword">float</span> m<b>IndustryExperience</b> = <b>5.5F</b>;
+
     <span class="keyword">List</span> mWhoAmI = {"<b>coder</b>", "<b>entrepreneur</b>"};
 
-    <span class="keyword">List</span> mWhatIcode = {"<b>Full stack web</b>", "<b>Android</b>", "<b>Anything & everything</b>""};
-    
+    <span class="keyword">List</span> mWhatIcode = {"<b>Full stack</b>", "<b>Android</b>", "<b>Backend</b>""};
+
     <span class="keyword">Location</span> mLocation = new Location(<b>17.3700L, 78.4800L</b>);
-    
-    @Override <span class="keyword">Favourite</span> eat { <span class="keyword">return</span> <span class="keyword">new</span> Favourite("chicken");} 
-        
-    @Override <span class="keyword">Peace</span> sleep { <span class="keyword">return</span> <span class="keyword">new</span> Hours(7);} 
-    
+
+    @Override <span class="keyword">Favourite</span> eat { <span class="keyword">return</span> <span class="keyword">new</span> Favourite("chicken");}
+
+    @Override <span class="keyword">Peace</span> sleep { <span class="keyword">return</span> <span class="keyword">new</span> Hours(7);}
+
 <b>    @Override Fun job { return <span style="color:red"><b>this</b></span>;} </b>
 }</pre>
                 	</div>
@@ -104,13 +104,12 @@ void createGitHubProfilePage()
 {language:'Java',rating:'8'},
 {language:'C',rating:9},
 {language:'Python',rating:'8'},
-{language:'Perl',rating:'6'},
-{language:'Erlang',rating:'5'}]">
+{language:'Perl',rating:'5'}]">
   <h3 style="margin-bottom: 20px;">Application Development</h3>
   <div ng-repeat="x  in appRatings">
         <div class="row">
             <div class="col-sm-4 language">
-                    {{x.language}} 
+                    {{x.language}}
             </div>
             <div class="col-sm-8 rating">
                     <span  ng-repeat="n in [] | range:x.rating"> &#9733 </span>
@@ -128,7 +127,7 @@ void createGitHubProfilePage()
   <div ng-repeat="x  in androidRatings">
         <div class="row">
             <div class="col-sm-4 language">
-                    {{x.language}} 
+                    {{x.language}}
             </div>
             <div class="col-sm-8 rating">
                     <span  ng-repeat="n in [] | range:x.rating"> &#9733 </span>
@@ -138,19 +137,20 @@ void createGitHubProfilePage()
   </div>
 </div>
 
-  <h3 style="margin-bottom: 20px; margin-top: 20px;">Tools and Version Controlling</h3>
+  <h3 style="margin-bottom: 20px; margin-top: 20px;">Build tools, IDE's and Versioning</h3>
 <div ng-init="toolRatings=[
 {language:'Perforce',rating:'10'},
 {language:'Git',rating:'10'},
 {language:'BitBucket',rating:'10'},
-{language:'Jenkins',rating:'7'},
+{language:'Jenkins',rating:'8'},
 {language:'Visual Studio',rating:'8'},
-{language:'Vim',rating:'7'},
+{language:'Maven',rating:'8'},
+{language:'Gradle',rating:'8'},
 {language:'Android Studio',rating:'9'}]">
   <div ng-repeat="x  in toolRatings">
         <div class="row">
             <div class="col-sm-4 language">
-                    {{x.language}} 
+                    {{x.language}}
             </div>
             <div class="col-sm-8 rating">
                     <span  ng-repeat="n in [] | range:x.rating"> &#9733 </span>
@@ -173,32 +173,32 @@ void createGitHubProfilePage()
 {language:'Jquery',rating:'7'},
 {language:'AngularJs',rating:'8'},
 {language:'Flask Python',rating:'9'},
-{language:'Django Python',rating:'7'},
-{language:'Code Ignitor(PHP)',rating:'7'}]"> 
+{language:'Drop wizard(Java)',rating:'7'}]">
 
   <h3 style="margin-bottom: 20px;">Web Development</h3>
   <div ng-repeat="x  in webRatings">
         <div class="row">
             <div class="col-sm-4 language">
-                    {{x.language}} 
+                    {{x.language}}
             </div>
             <div class="col-sm-8 rating">
                     <span  ng-repeat="n in [] | range:x.rating"> &#9733 </span>
                    <span  ng-repeat="n in [] | range:10-x.rating"> &#9734</span>
             </div>
   </div>
- 
+
 </div>
 
   <h3 style="margin-top: 20px; margin-bottom: 20px">Databases</h3>
  <div ng-init="databaseRatings=[
-{language:'MySql',rating:'9'},
+{language:'MySql',rating:'8'},
 {language:'SQlite',rating:'8'},
-{language:'MongoDb',rating:'7'}]">
+{language:'DynamoDb',rating:'8'},
+{language:'MongoDb',rating:'8'}]">
 <div ng-repeat="x  in databaseRatings">
         <div class="row">
             <div class="col-sm-4 language">
-                    {{x.language}} 
+                    {{x.language}}
             </div>
             <div class="col-sm-8 rating">
                     <span  ng-repeat="n in [] | range:x.rating"> &#9733 </span>
@@ -211,7 +211,7 @@ void createGitHubProfilePage()
  <div ng-init="deploymentRatings=[
 {language:'Ubuntu',rating:'9'},
 {language:'Windows',rating:'9'},
-{language:'Mac',rating:'7'},
+{language:'Mac',rating:'8'},
 {language:'Amazon Web Services',rating:'8'},
 {language:'Google Cloud Engine',rating:'6'},
 {language:'Heroku',rating:'6'}]">
@@ -219,7 +219,7 @@ void createGitHubProfilePage()
 <div ng-repeat="x  in deploymentRatings">
         <div class="row">
             <div class="col-sm-4 language">
-                    {{x.language}} 
+                    {{x.language}}
             </div>
             <div class="col-sm-8 rating">
                     <span  ng-repeat="n in [] | range:x.rating"> &#9733 </span>
@@ -233,14 +233,14 @@ void createGitHubProfilePage()
 </div>
 </div>
     <div id="contact" class="container-fluid jumbo">
-    	<div class="row"> 
+    	<div class="row">
         <div class="col-sm-offset-1 col-sm-3 text-center">
             <div style="color:#fff;font-size:18px;">
-                
+
                 <a href="mailto:ramesh.katreddi@gmail.com">ramesh.katreddi@gmail.com</a>
                 <p>+919100180531</p>
                 <ADDRESS>
-                    KPHB Colony, 
+                    KPHB Colony,
                     Hyderabad,
                     Telangana,
                     India
@@ -250,12 +250,12 @@ void createGitHubProfilePage()
             </div>
         </div>
 
-    		<div class="col-sm-6 col-sm-offset-1" style="color: white"> 
+    		<div class="col-sm-6 col-sm-offset-1" style="color: white">
                 <div>
                     <p>Professional:</p>
                     <a target="_new" href="https://in.linkedin.com/in/rameshkatreddi">
                         <span class="linkedin social"></span>
-                    </a>    
+                    </a>
                     <a target="_new" href="https://github.com/ramesh-katreddi">
                         <span class="github social"></span>
                     </a>
@@ -269,12 +269,12 @@ void createGitHubProfilePage()
                     </a>
                         <a target="_new" href="https://twitter.com/krborn_to_win">
                             <span class="twitter social"></span>
-                        </a>                    
+                        </a>
                 <div>
-                    
+
 
                 </div>
-                <div> 
+                <div>
                     <p>Competitive Programming:</p>
                         <a target="_new" href="http://stackoverflow.com/users/2494109/ramesh">
                             <span class="stack social"></span>
@@ -289,7 +289,7 @@ void createGitHubProfilePage()
         <div style="color:white;padding-bottom: 20px; padding-top:100px; font-size:24px;" class="text-center">
         <i><b>
         &quot; Programmers Never Die.
-        When you feel like giving up, Remember why you held on for so long.&quot; 
+        When you feel like giving up, Remember why you held on for so long.&quot;
         </b></i>
     </div>
 
